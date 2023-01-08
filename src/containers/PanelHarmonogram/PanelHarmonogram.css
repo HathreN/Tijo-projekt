@@ -1,0 +1,301 @@
+@import '../../colors.css';
+
+@media only screen and (max-width: 576px) {
+  .PanelHarmonogram {
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 10%;
+  }
+
+  .Header-container {
+      text-align: center;
+      margin-bottom: 15px;
+  }
+
+  .Header1 {
+      font-size: 26px;
+      font-weight: bold;
+  }
+
+  .Header2 {
+      font-size: 18px;
+      font-width: light;
+  }
+
+    .typ-zmieszane {
+        background-color: #f9f9f9;
+        flex: 1;
+        text-align: right;
+    }
+
+    .typ-szklo {
+        background-color: #c3e6c7;
+        flex: 1;
+        text-align: right;
+    }
+
+    .typ-plastik {
+        background-color: #f5f7c9;
+        flex: 1;
+        text-align: right;
+    }
+
+    .typ-papier {
+        background-color: #dfe9f0;
+        flex: 1;
+        text-align: right;
+    }
+
+    .typ-bio {
+        background-color: #e6e4dd;
+        flex: 1;
+        text-align: right;
+    }
+
+    .typ-gabaryt {
+        background-color: #f0e1e2;
+        flex: 1;
+        text-align: right;
+    }
+
+    .month-name {
+        background-color: #fbd0a5;
+        flex: 1;
+        text-align: right;
+    }
+
+    .month {
+        background-color: #fbd0a5;
+        margin-bottom: 25px;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .month > * {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        flex: 50%;
+    }
+
+    .month-label {
+        background-color: #fbd0a5;
+        flex: 50%;
+    }
+
+    .zmieszane-label {
+        background-color: #f9f9f9;
+        flex: 50%;
+    }
+
+    .szklo-label {
+        background-color: #c3e6c7;
+        flex: 50%;
+    }
+
+    .plastik-label {
+        background-color: #f5f7c9;
+        flex: 50%;
+    }
+
+    .papier-label {
+        background-color: #dfe9f0;
+        flex: 50%;
+    }
+
+    .bio-label {
+        background-color: #e6e4dd;
+        flex: 50%;
+    }
+
+    .gabaryt-label {
+        background-color: #f0e1e2;
+        flex: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    .PanelHarmonogram {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .Header-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .Header1 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .Header2 {
+        font-size: 18px;
+        font-width: light;
+    }
+
+    .Schedule {
+        background-color: transparent;
+    }
+
+    .first-row {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .first-row > * {
+        margin-right: 1px;
+        min-height: 50px;
+        min-width: 70px;
+        word-wrap: break-word;
+        padding-right: 10px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .header-month-name {
+        background-color: #fbd0a5;
+        flex: 1;
+    }
+
+    .month-name {
+        background-color: #fce0c3;
+        flex: 1;
+    }
+
+    .header-typ-zmieszane {
+        background-color: #e0e0e0;
+        flex: 1;
+    }
+
+    .typ-zmieszane {
+        background-color: #f9f9f9;
+        flex: 1;
+    }
+
+    .header-typ-szklo {
+        background-color: #95bf8f;
+        flex: 1;
+    }
+
+    .typ-szklo {
+        background-color: #c3e6c7;
+        flex: 1;
+    }
+
+    .header-typ-plastik {
+        background-color: #f1f57a;
+        flex: 1;
+    }
+
+    .typ-plastik {
+        background-color: #f5f7c9;
+        flex: 1;
+    }
+
+    .header-typ-papier {
+        background-color: #93cbf0;
+        flex: 1;
+    }
+
+    .typ-papier {
+        background-color: #dfe9f0;
+        flex: 1;
+    }
+
+    .typ-bio {
+        background-color: #e6e4dd;
+        flex: 1;
+    }
+
+    .header-typ-bio {
+        background-color: #b3a79e;
+        flex: 1;
+    }
+
+    .typ-gabaryt {
+        background-color: #f0e1e2;
+        flex: 1;
+    }
+
+    .header-typ-gabaryt {
+        background-color: #e3c6c6;
+        flex: 1;
+    }
+
+    .month {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .month > * {
+        margin-right: 1px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 1px;
+        border: 0px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .month > input {
+        margin-right: -3px;
+    }
+
+    .month > input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+    .identificators {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #515151;
+        font-size: 14px;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .save-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .save-buttons > button {
+        background-color: var(--primary);
+        text-align: center;
+        padding: 15px;
+        width: 40%;
+        margin: auto;
+        border-radius: 5px;
+        border: 1px solid #868686;
+        font-size: 18px;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+
+    .search-bar {
+        background-color: var(--gray);
+        border: 1px solid #818181;
+        height: 35px;
+        width: 350px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
