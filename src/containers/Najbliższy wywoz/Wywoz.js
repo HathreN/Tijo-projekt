@@ -17,8 +17,19 @@ function Wywoz({props}) {
             moment(`${element.rok}-${element.miesiac}-${element.dzien}`) >= moment()
         );
 
+        filteredData = filteredData.sort( compare );
+
         return filteredData;
     }
+    const compare = ( a, b ) => {
+        if ( moment(`${a.rok}-${a.miesiac}-${a.dzien}`) < moment(`${b.rok}-${b.miesiac}-${b.dzien}`) ){
+            return -1;
+        }
+        if ( moment(`${a.rok}-${a.miesiac}-${a.dzien}`) > moment(`${b.rok}-${b.miesiac}-${b.dzien}`) ){
+            return 1;
+        }
+        return 0;
+    } // funkcja sortująca daty po kolei
 
     useEffect(() => {
         axios({
@@ -33,7 +44,7 @@ function Wywoz({props}) {
             })
             .catch((error) => {
                 if (error.message === 'Network Error') {
-                    alert('Problem z połączeniem internetowym');
+                    toast.error('Problem z połączeniem internetowym');
                 } else if (error.response.data == "Not Found") {
                     toast.error("Twoja lokalizacja nie posiada jeszcze harmonogramu wywozu śmieci")
                 } else {
